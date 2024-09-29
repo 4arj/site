@@ -1,0 +1,51 @@
+/**
+* Кнопка переключения панели
+* тег <label>
+*/
+
+.navi-toggle {
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно левого края панели */
+    left: 320px;
+    /* отступ от верхнего края панели */
+    top: 1em;
+    /* внутренние отступы */
+    padding: 0.5em;
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    background: inherit;
+    /* цвет текста */
+    color: #d8a1a1;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 1.2em;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+  }
+  
+  
+  /* определяем текст кнопки 
+  * символ Unicode (TRIGRAM FOR HEAVEN)
+  */
+  
+  .navi-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+  }
+  
+  
+  /* цвет текста при наведении */
+  
+  .navi-toggle:hover {
+    color: #d8a1a1;
+    border-color: #181212;
+    
+  }
